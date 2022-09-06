@@ -1,4 +1,4 @@
-package Latihan;
+package latihan;
 
 public class BinarySearch {
 	public static void main(String[] args) {

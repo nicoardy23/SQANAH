@@ -1,4 +1,4 @@
-package Latihan;
+package latihan;
 import java.util.*;
 
 public class CharMNico {

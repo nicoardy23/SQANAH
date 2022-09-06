@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import UjianMingguKedua.Geometri;
+
 public class TestGeometri {
 	Geometri ge;
 	Random rand;

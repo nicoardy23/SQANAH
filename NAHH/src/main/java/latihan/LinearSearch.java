@@ -1,4 +1,4 @@
-package Latihan;
+package latihan;
 
 public class LinearSearch {
 	public static void main(String[] args) {

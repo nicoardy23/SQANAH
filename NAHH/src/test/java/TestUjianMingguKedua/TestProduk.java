@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
+import UjianMingguKedua.Produk;
+
 public class TestProduk {
 	Produk pr = new Produk();
 	

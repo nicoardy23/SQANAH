@@ -1,4 +1,4 @@
-package Latihan;
+package latihan;
 
 public class BubbleSortAscending {
 	static StringBuilder sBuild = new StringBuilder();	
