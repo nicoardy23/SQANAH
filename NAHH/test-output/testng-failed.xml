@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestUjianMingguKedua.TestProduk">
+      <class name="testng.TestCekBilangan">
         <methods>
-          <include name="cekStok"/>
-          <include name="hitungStok"/>
+          <include name="befTest"/>
+          <include name="aftTest"/>
+          <include name="testGenap"/>
+          <include name="aftMethod"/>
+          <include name="testGanjil"/>
+          <include name="befMethod"/>
         </methods>
-      </class> <!-- TestUjianMingguKedua.TestProduk -->
+      </class> <!-- testng.TestCekBilangan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

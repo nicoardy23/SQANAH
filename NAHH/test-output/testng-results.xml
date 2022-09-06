@@ -1,115 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-05T21:36:30 WIB" name="Default suite" finished-at="2022-09-05T21:36:30 WIB" duration-ms="105">
+  <suite started-at="2022-09-06T11:52:33 WIB" name="Suite" finished-at="2022-09-06T11:52:34 WIB" duration-ms="125">
     <groups>
     </groups>
-    <test started-at="2022-09-05T21:36:30 WIB" name="Default test" finished-at="2022-09-05T21:36:30 WIB" duration-ms="105">
-      <class name="TestUjianMingguKedua.TestProduk">
-        <test-method signature="cekStok()[pri:0, instance:TestUjianMingguKedua.TestProduk@3514a4c0]" started-at="2022-09-05T21:36:30 WIB" name="cekStok" finished-at="2022-09-05T21:36:30 WIB" duration-ms="25" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [2] but found [0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2] but found [0]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1240)
-at org.testng.Assert.assertEquals(Assert.java:1274)
-at TestUjianMingguKedua.TestProduk.cekStok(TestProduk.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2022-09-06T11:52:33 WIB" name="Test" finished-at="2022-09-06T11:52:34 WIB" duration-ms="125">
+      <class name="TestUjianMingguKedua.TestGeometri">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:33 WIB" name="befTest" finished-at="2022-09-06T11:52:33 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cekStok -->
-        <test-method signature="hitungStok()[pri:0, instance:TestUjianMingguKedua.TestProduk@3514a4c0]" started-at="2022-09-05T21:36:30 WIB" name="hitungStok" finished-at="2022-09-05T21:36:30 WIB" duration-ms="3" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [19000.0] but found [0.0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [19000.0] but found [0.0]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEquals(Assert.java:727)
-at org.testng.Assert.assertEquals(Assert.java:762)
-at TestUjianMingguKedua.TestProduk.hitungStok(TestProduk.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befClass()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="befClass" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hitungStok -->
-        <test-method signature="tambahProduk()[pri:0, instance:TestUjianMingguKedua.TestProduk@3514a4c0]" started-at="2022-09-05T21:36:30 WIB" name="tambahProduk" finished-at="2022-09-05T21:36:30 WIB" duration-ms="1" status="PASS">
+        </test-method> <!-- befClass -->
+        <test-method signature="testPersegi()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="testPersegi" finished-at="2022-09-06T11:52:34 WIB" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tambahProduk -->
-        <test-method signature="tambahProdukDua()[pri:0, instance:TestUjianMingguKedua.TestProduk@3514a4c0]" started-at="2022-09-05T21:36:30 WIB" name="tambahProdukDua" finished-at="2022-09-05T21:36:30 WIB" duration-ms="1" status="PASS">
+        </test-method> <!-- testPersegi -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tambahProdukDua -->
-      </class> <!-- TestUjianMingguKedua.TestProduk -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testSegitiga()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="testSegitiga" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSegitiga -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testTrapesium()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="testTrapesium" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrapesium -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftClass()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="aftClass" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftClass -->
+        <test-method is-config="true" signature="aftTest()[pri:0, instance:TestUjianMingguKedua.TestGeometri@6cd28fa7]" started-at="2022-09-06T11:52:34 WIB" name="aftTest" finished-at="2022-09-06T11:52:34 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftTest -->
+      </class> <!-- TestUjianMingguKedua.TestGeometri -->
+      <class name="testng.TestCalculator">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:33 WIB" name="befTest" finished-at="2022-09-06T11:52:33 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testaddNilai()[pri:1, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:34 WIB" name="testaddNilai" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddNilai -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="testDevideNilai()[pri:2, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:34 WIB" name="testDevideNilai" finished-at="2022-09-06T11:52:34 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDevideNilai -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:testng.TestCalculator@7e7be63f]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+      </class> <!-- testng.TestCalculator -->
+      <class name="TestUjianMingguKedua.TestAritmatika">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="befTest" finished-at="2022-09-06T11:52:33 WIB" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befClass()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="befClass" finished-at="2022-09-06T11:52:33 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befClass -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="befMethod" finished-at="2022-09-06T11:52:33 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testModulusAritmatika()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="testModulusAritmatika" finished-at="2022-09-06T11:52:33 WIB" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testModulusAritmatika -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="aftMethod" finished-at="2022-09-06T11:52:33 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="befMethod" finished-at="2022-09-06T11:52:33 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testPembagianAritmatika()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:33 WIB" name="testPembagianAritmatika" finished-at="2022-09-06T11:52:33 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPembagianAritmatika -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testPenguranganAritmatika()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="testPenguranganAritmatika" finished-at="2022-09-06T11:52:34 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPenguranganAritmatika -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="befMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testPenjumlahanAritmatika()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="testPenjumlahanAritmatika" finished-at="2022-09-06T11:52:34 WIB" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPenjumlahanAritmatika -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="aftMethod" finished-at="2022-09-06T11:52:34 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftClass()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="aftClass" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftClass -->
+        <test-method is-config="true" signature="aftTest()[pri:0, instance:TestUjianMingguKedua.TestAritmatika@22ef9844]" started-at="2022-09-06T11:52:34 WIB" name="aftTest" finished-at="2022-09-06T11:52:34 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftTest -->
+      </class> <!-- TestUjianMingguKedua.TestAritmatika -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
