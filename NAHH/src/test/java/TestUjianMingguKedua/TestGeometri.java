@@ -1,5 +1,13 @@
 package TestUjianMingguKedua;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Random;
@@ -31,7 +39,7 @@ public class TestGeometri {
 	
 	@BeforeMethod
 	public void befMethod() {
-		System.out.println("INI ADALAH BEFORE METHOD");
+		System.out.println("-----------------------------INI ADALAH BEFORE METHOD-----------------------------");
 		intSisiA = rand.nextInt(50, 100);
 		intSisiB = rand.nextInt(100, 150);
 		intTinggi = rand.nextInt(20, 70);
@@ -40,20 +48,20 @@ public class TestGeometri {
 	
 	@BeforeClass
 	public void befClass() {
-		System.out.println("INI ADALAH BEFORE CLASS");
+		System.out.println("===========================INI ADALAH BEFORE CLASS===========================");
 	}
 	
 	@Test
 	public void testPersegi() {
 		System.out.println("Panjang Sisi = "+intSisiA);
-		assertEquals(ge.luasPersegiActual(intSisiA), ge.luasPersegiExpect(intSisiA));
+		AssertJUnit.assertEquals(ge.luasPersegiActual(intSisiA), ge.luasPersegiExpect(intSisiA));
 	}
 	
 	@Test
 	public void testSegitiga() {
 		System.out.println("Alas = "+intAlas);
 		System.out.println("Tinggi = "+intTinggi);
-		assertEquals(ge.luasSegitigaActual(intAlas, intTinggi), ge.luasSegitigaExpect(intAlas, intTinggi));
+		AssertJUnit.assertEquals(ge.luasSegitigaActual(intAlas, intTinggi), ge.luasSegitigaExpect(intAlas, intTinggi));
 	}
 	
 	@Test
@@ -61,17 +69,17 @@ public class TestGeometri {
 		System.out.println("Tinggi = "+intTinggi);
 		System.out.println("Lebar Sisi A = "+intSisiA);
 		System.out.println("Lebar Sisi B = "+intSisiB);
-		assertEquals(ge.luasTrapesiumActual(intTinggi, intSisiA, intSisiB), ge.luasTrapesiumExpect(intTinggi, intSisiA, intSisiB));
+		AssertJUnit.assertEquals(ge.luasTrapesiumActual(intTinggi, intSisiA, intSisiB), ge.luasTrapesiumExpect(intTinggi, intSisiA, intSisiB));
 	}
 	
 	@AfterClass
 	public void aftClass() {
-		System.out.println("INI ADALAH AFTER CLASS");
+		System.out.println("===========================INI ADALAH AFTER CLASS===========================");
 	}
 	
 	@AfterMethod
 	public void aftMethod() {
-		System.out.println("INI ADALAH AFTER METHOD");
+		System.out.println("-----------------------------INI ADALAH AFTER METHOD-----------------------------");
 	}
 	
 	@AfterTest

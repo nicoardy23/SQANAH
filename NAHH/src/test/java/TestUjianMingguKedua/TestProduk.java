@@ -1,31 +1,75 @@
 package TestUjianMingguKedua;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import UjianMingguKedua.Produk;
 
 public class TestProduk {
-	Produk pr = new Produk();
+	Produk pr;
 	
-	@Test
+	@BeforeTest
+	public void befTest() {
+		System.out.println("Proses Test Dimulai");
+		pr = new Produk();
+	}
+	
+	@BeforeMethod
+	public void befMethod() {
+		System.out.println("------------------------------INI ADALAH BEFORE METHOD------------------------------");
+	}
+	
+	@BeforeClass
+	public void befClass() {
+		System.out.println("==============================INI ADALAH BEFORE CLASS==============================");
+	}
+	
+	@Test(priority = 1)
 	public void tambahProduk() {
-		assertEquals(pr.tambahStok(), 10000);
+		AssertJUnit.assertEquals(pr.tambahStok(), 10000);
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void tambahProdukDua() {
-		assertEquals(pr.tambahStok(), 20000);
+		AssertJUnit.assertEquals(pr.tambahStok(), 20000);
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void cekStok() {
-		assertEquals(pr.cekStok(), 2);
+		AssertJUnit.assertEquals(pr.cekStok(), 2);
 	}
 	
-	@Test
+	@Test(priority = 4)
+	public void tambahProdukTiga() {
+		AssertJUnit.assertEquals(pr.tambahStok(), 30000);
+	}
+	
+	@Test(priority = 5)
 	public void hitungStok() {
-		assertEquals(pr.kalkulasiDiskon(), 19000);
+		AssertJUnit.assertEquals(pr.kalkulasiDiskon(), 29500.0);
+	}
+	
+	@AfterMethod
+	public void aftMethod() {
+		System.out.println("------------------------------INI ADALAH AFTER METHOD------------------------------");
+	}
+	
+	@AfterClass
+	public void aftClass() {
+		System.out.println("==============================INI ADALAH AFTER CLASS==============================");
+	}
+	
+	@AfterTest
+	public void aftTest() {
+		System.out.println("Proses Test Telah Selesai");
 	}
 }

@@ -10,7 +10,7 @@ public class Produk {
 		bp.setJumlahProdukA(bp.getJumlahProdukA()+1);
 		bp.setTotalDiskon(bp.getDiskon()*bp.getHargaProdukA());
 		bp.setTotalProduk(bp.getHargaProdukA()+bp.getTotalProduk());
-		System.out.println(bp.getJumlahProdukA());
+		System.out.println("Produk bertambah menjadi : "+bp.getJumlahProdukA());
 		
 		return bp.getTotalProduk();
 	}

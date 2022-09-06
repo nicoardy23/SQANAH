@@ -1,5 +1,17 @@
 package TestUjianMingguKedua;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.util.Random;
@@ -29,44 +41,44 @@ public class TestAritmatika {
 	
 	@BeforeMethod
 	public void befMethod() {
-		System.out.println("INI ADALAH BEFORE METHOD!!");
+		System.out.println("-------------------------INI ADALAH BEFORE METHOD-------------------------");
 		nilaiPertama = rand.nextInt(25, 100);
 		nilaiKedua = rand.nextInt(1, 20);
 	}
 	
 	@BeforeClass
 	public void befClass() {
-		System.out.println("INI ADALAH BEFORE CLASS!!");
+		System.out.println("=========================INI ADALAH BEFORE CLASS=========================");
 	}
 	
 	@Test
 	public void testPenjumlahanAritmatika() {
-		assertEquals(ar.addPenjumlahanActual(nilaiPertama, nilaiKedua), ar.addPenjumlahanExpect(nilaiPertama, nilaiKedua));
+		AssertJUnit.assertEquals(ar.addPenjumlahanActual(nilaiPertama, nilaiKedua), ar.addPenjumlahanExpect(nilaiPertama, nilaiKedua));
 	}
 	
 	@Test
 	public void testPenguranganAritmatika() {
-		assertEquals(ar.addPenguranganActual(nilaiPertama, nilaiKedua), ar.addPenguranganExpect(nilaiPertama, nilaiKedua));
+		AssertJUnit.assertEquals(ar.addPenguranganActual(nilaiPertama, nilaiKedua), ar.addPenguranganExpect(nilaiPertama, nilaiKedua));
 	}
 	
 	@Test
 	public void testPembagianAritmatika() {
-		assertEquals(ar.addPembagianActual(nilaiPertama, nilaiKedua), ar.addPembagianExpect(nilaiPertama, nilaiKedua));
+		AssertJUnit.assertEquals(ar.addPembagianActual(nilaiPertama, nilaiKedua), ar.addPembagianExpect(nilaiPertama, nilaiKedua));
 	}
 	
 	@Test
 	public void testModulusAritmatika() {
-		assertEquals(ar.addModulusActual(nilaiPertama, nilaiKedua), ar.addModulusExpect(nilaiPertama, nilaiKedua));
+		AssertJUnit.assertEquals(ar.addModulusActual(nilaiPertama, nilaiKedua), ar.addModulusExpect(nilaiPertama, nilaiKedua));
 	}
 	
 	@AfterClass
 	public void aftClass() {
-		System.out.println("INI ADALAH AFTER CLASS!!");
+		System.out.println("=========================INI ADALAH AFTER CLASS=========================");
 	}
 	
 	@AfterMethod
 	public void aftMethod() {
-		System.out.println("INI ADALAH AFTER METHOD!!");
+		System.out.println("-------------------------INI ADALAH AFTER METHOD-------------------------");
 	}
 	
 	@AfterTest
